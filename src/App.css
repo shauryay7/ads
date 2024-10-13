@@ -1,4 +1,7 @@
 /* Hero Section */
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+
+/* Add the remaining CSS you shared here */
 #home {
   position: relative;
   display: flex;
@@ -126,9 +129,13 @@
 
 /*css for our domain */
 .domain{
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   padding: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 50px;
 }
 .image{
   height: 500px;
@@ -138,9 +145,14 @@
 }
 .para{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: larger;
+  font-size: 1.4rem;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .para h1{
-  font-size: 2rem;
+  font-size: 4rem;
   padding-bottom: 50px;
+  color: darkgray;
+  font-weight: bolder;
 }
