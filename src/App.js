@@ -138,14 +138,13 @@ function App() {
                  alt="Alexa Developers SRM Team " className="image"/></div>
 
         </section>
-        <div className="App">
-          {/* Other sections/components */}
-
-          {/* Our Events Section */}
+        <section id="event">
+          <h2 className="text-4xl sm:text-5xl font-bold text-teal-400 mb-6 text-center p-4">
+            Our Events
+          </h2>
           <OurEvents/>
 
-          {/* Other sections/components */}
-        </div>
+        </section>
 
       </div>
   );
