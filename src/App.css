@@ -1,0 +1,146 @@
+/* Hero Section */
+#home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  background-image: url('https://www.alexadevsrm.org/hero-logo.svg'); /* Add the image */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  background-size: 400px 400px; /* Adjust the size as per your requirement */
+  color: white;
+}
+
+@keyframes moveBubble {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0, -2000px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  bottom: -150px;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: moveBubble linear infinite;
+}
+
+/* Varying smaller bubble properties */
+.bubble:nth-child(1) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(72, 187, 120, 0.6);
+  animation-duration: 15s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+  left: 20%;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(72, 187, 190, 0.5);
+  animation-duration: 20s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+  left: 35%;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(32, 178, 170, 0.7);
+  animation-duration: 18s;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(72, 222, 128, 0.6);
+  animation-duration: 25s;
+  animation-delay: 6s;
+}
+
+.bubble:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(52, 187, 140, 0.4);
+  animation-duration: 17s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+  left: 80%;
+  width: 22px;
+  height: 22px;
+  background-color: rgba(32, 178, 180, 0.5);
+  animation-duration: 30s;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(7) {
+  left: 90%;
+  width: 18px;
+  height: 18px;
+  background-color: rgba(72, 147, 190, 0.6);
+  animation-duration: 22s;
+  animation-delay: 5s;
+}
+
+.bubble:nth-child(8) {
+  left: 40%;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(72, 157, 190, 0.6);
+  animation-duration: 19s;
+  animation-delay: 7s;
+}
+
+.bubble:nth-child(9) {
+  left: 25%;
+  width: 14px;
+  height: 14px;
+  background-color: rgba(52, 137, 160, 0.5);
+  animation-duration: 28s;
+  animation-delay: 9s;
+}
+
+.bubble:nth-child(10) {
+  left: 15%;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(42, 177, 180, 0.7);
+  animation-duration: 21s;
+  animation-delay: 11s;
+}
+
+/*css for our domain */
+.domain{
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+.image{
+  height: 500px;
+  background-color: black;
+  color: white;
+  width:100%;
+}
+.para{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+.para h1{
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
