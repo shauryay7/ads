@@ -63,7 +63,8 @@ function App() {
             {/* Image on the left */}
             <div className="w-full lg:w-1/2 flex justify-center">
               <img src="https://www.alexadevsrm.org/_next/image?url=%2Fclub.png&w=828&q=75"
-                   alt="Alexa Developers SRM Team" className=" border-teal-400 transform hover:scale-105 transition-transform duration-200 w-full "/>
+                   alt="Alexa Developers SRM Team"
+                   className=" border-teal-400 transform hover:scale-105 transition-transform duration-200 w-full "/>
             </div>
 
             {/* About Us Text */}
@@ -143,9 +144,60 @@ function App() {
             Our Events
           </h2>
           <OurEvents/>
-
         </section>
-
+        <footer className="bg-black text-white py-10 footer">
+          <div className="container mx-auto text-center">
+            <div className="flex justify-center space-x-8 mb-4">
+              {/* Social Media Icons */}
+              <a href="https://www.instagram.com/alexadevsrm" target="_blank" rel="noopener noreferrer">
+                <img
+                    src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram-new.png"
+                    alt="Instagram"
+                    className="w-8 h-8 hover:scale-110 transition-transform"
+                />
+              </a>
+              <a href="mailto:alexa@developers.srm" target="_blank" rel="noopener noreferrer">
+                <img
+                    src="https://img.icons8.com/ios-filled/50/FFFFFF/gmail-new.png"
+                    alt="Gmail"
+                    className="w-8 h-8 hover:scale-110 transition-transform"
+                />
+              </a>
+              <a href="https://www.linkedin.com/company/alexadevsrm" target="_blank" rel="noopener noreferrer">
+                <img
+                    src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png"
+                    alt="LinkedIn"
+                    className="w-8 h-8 hover:scale-110 transition-transform"
+                />
+              </a>
+              <a href="https://twitter.com/alexadevsrm" target="_blank" rel="noopener noreferrer">
+                <img
+                    src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png"
+                    alt="Twitter"
+                    className="w-8 h-8 hover:scale-110 transition-transform"
+                />
+              </a>
+              <a href="https://www.youtube.com/alexadevsrm" target="_blank" rel="noopener noreferrer">
+                <img
+                    src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png"
+                    alt="YouTube"
+                    className="w-8 h-8 hover:scale-110 transition-transform"
+                />
+              </a>
+              <a href="https://www.facebook.com/alexadevsrm" target="_blank" rel="noopener noreferrer">
+                <img
+                    src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-new.png"
+                    alt="Facebook"
+                    className="w-8 h-8 hover:scale-110 transition-transform"
+                />
+              </a>
+            </div>
+            <p className="text-sm mb-4">@alexadevsrm</p>
+            <p className="text-sm">
+              Designed and Developed by <span className="text-teal-400">Alexa Developers</span> SRM.
+            </p>
+          </div>
+        </footer>
       </div>
   );
 }
