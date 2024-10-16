@@ -12,11 +12,11 @@ const events = [
         image: "https://www.alexadevsrm.org/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs4t0kmno%2Fproduction%2F915b13bac64d9565b1870aff6cc286511e360525-1440x1440.jpg&w=2048&q=75",
     },
     {
-        title: "UI/UX Design Sprint",
+        title: "UI/UX",
        image: "https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
     },
     {
-        title: "AI for Good",
+        title: "Tech Next Gen",
         image: "https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
     },
 ];

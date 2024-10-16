@@ -1,27 +1,13 @@
 import React from 'react';
-import './App.css';  // Custom CSS for bubble animations
-import OurEvents from './Our Events';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import OurEvents  from "./Our Events";
+import TeamPage from "./team";
+// Define the placeholder component for OurEvents
 
-function App() {
-  return (
-      <div className="bg-black text-white min-h-screen relative overflow-hidden">
-        {/* Navbar */}
-        <nav className="flex justify-between items-center p-10">
-          <div className="text-xl font-bold">
-            <span className="text-teal-400">Alexa</span> Developers SRM
-          </div>
-          <div className="space-x-8">
-            <a href="#home" className="hover:text-teal-400">Home</a>
-            <a href="#events" className="hover:text-teal-400">Events</a>
-            <a href="#team" className="hover:text-teal-400">Our Team</a>
-            <a href="#blogs" className="hover:text-teal-400">Blogs</a>
-          </div>
-          <button className="px-6 py-2 bg-teal-400 hover:bg-teal-500 rounded-full text-black">
-            Apply Now
-          </button>
-        </nav>
 
-        {/* Hero Section */}
+function Home() {
+  return (<div className="bg-black text-white min-h-screen relative overflow-hidden">
         <section id="home" className="relative flex flex-col justify-center items-center text-center">
           <h1 className="text-4xl sm:text-6xl font-bold mb-4 z-20">
             Alexa Developers SRM
@@ -31,7 +17,11 @@ function App() {
           </p>
 
           {/* Moving Bubbles */}
-          <div className="absolute inset-0 overflow-hidden z-10">
+
+          <div className="absolute inset-0 overflow-hidden z-10 h-screen">
+            <div id="stars"/>
+            <div id="stars2"/>
+            <div id="stars3"/>
             <div className="bubble w-4 h-4 bg-teal-400 rounded-full"></div>
             <div className="bubble w-6 h-6 bg-teal-300 rounded-full"></div>
             <div className="bubble w-3 h-3 bg-teal-500 rounded-full"></div>
@@ -51,7 +41,7 @@ function App() {
             <span className="text-teal-500">Scroll down</span>
           </div>
         </section>
-        <section id="about" className="flex flex-col justify-center items-center py-16 bg-black text-white ">
+        <section id="about" className="flex flex-col justify-center items-center py-16 bg-black text-white">
           <h2 className="text-4xl sm:text-5xl font-bold text-teal-400 mb-6 text-center p-4">
             About Us
           </h2>
@@ -59,12 +49,11 @@ function App() {
           {/* Flexbox to align image and text side by side */}
           <div
               className="flex flex-col lg:flex-row justify-center items-center lg:space-x-16 space-y-8 lg:space-y-0 px-10">
-
             {/* Image on the left */}
             <div className="w-full lg:w-1/2 flex justify-center">
               <img src="https://www.alexadevsrm.org/_next/image?url=%2Fclub.png&w=828&q=75"
                    alt="Alexa Developers SRM Team"
-                   className=" border-teal-400 transform hover:scale-105 transition-transform duration-200 w-full "/>
+                   className="border-teal-400 transform hover:scale-105 transition-transform duration-200 w-full"/>
             </div>
 
             {/* About Us Text */}
@@ -87,20 +76,20 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="about" className="flex flex-col justify-center  py-16 bg-black text-white ">
+        <section id="domains" className="flex flex-col justify-center py-16 bg-black text-white">
           <h2 className="text-9xl sm:text-5xl font-bold text-teal-400 mb-6 text-center p-4">Our Domains</h2>
           <div className="domain">
             <div className="image">
-              <img src="https://www.alexadevsrm.org/home/js.svg"
-                   alt="Alexa Developers SRM Team "/></div>
+              <img src="https://www.alexadevsrm.org/home/js.svg" alt="Alexa Developers SRM Team"/>
+            </div>
             <div className="para">
               <h1>Technical.</h1>
               <p>A vibrant community of tech enthusiasts collaborating and transforming the future.
                 The tech domain works together to perfect frontend user experiences, build robust systems
                 in backend, and innovate ideas through app dev, elevating their skills throughout the journey.</p>
             </div>
-
           </div>
+
           <div className="domain">
             <div className="para">
               <h1>Creatives.</h1>
@@ -109,15 +98,13 @@ function App() {
                 narratives and seamless design interfaces. Experience the forefront of creativity as they shape
                 the art of engagement.</p>
             </div>
-            <img className="image" src="https://www.alexadevsrm.org/home/ux.svg"
-                 alt="Alexa Developers SRM Team "/></div>
-          <div className="para">
-
+            <img className="image" src="https://www.alexadevsrm.org/home/ux.svg" alt="Alexa Developers SRM Team"/>
           </div>
+
           <div className="domain">
             <div className="image">
-              <img className="img" src="https://www.alexadevsrm.org/home/social.svg"
-                   alt="Alexa Developers SRM Team "/></div>
+              <img className="img" src="https://www.alexadevsrm.org/home/social.svg" alt="Alexa Developers SRM Team"/>
+            </div>
             <div className="para">
               <h1>Events.</h1>
               <p>The heartbeat of the club, from brainstorming brilliant ideas
@@ -125,8 +112,8 @@ function App() {
                 a lasting impact on everyone involved. Our events domain thrives because of the hard work
                 and creativity of the team.</p>
             </div>
-
           </div>
+
           <div className="domain">
             <div className="para">
               <h1>Business.</h1>
@@ -135,70 +122,66 @@ function App() {
                 industry professionals, bringing in amazing sponsors through skilled PR activities and
                 bringing imagination to life.</p>
             </div>
-            <img src="https://www.alexadevsrm.org/home/business.svg"
-                 alt="Alexa Developers SRM Team " className="image"/></div>
-
-        </section>
-        <section id="event">
-          <h2 className="text-4xl sm:text-5xl font-bold text-teal-400 mb-6 text-center p-4">
-            Our Events
-          </h2>
-          <OurEvents/>
-        </section>
-        <footer className="bg-black text-white py-10 footer">
-          <div className="container mx-auto text-center">
-            <div className="flex justify-center space-x-8 mb-4">
-              {/* Social Media Icons */}
-              <a href="https://www.instagram.com/alexadevsrm" target="_blank" rel="noopener noreferrer">
-                <img
-                    src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram-new.png"
-                    alt="Instagram"
-                    className="w-8 h-8 hover:scale-110 transition-transform"
-                />
-              </a>
-              <a href="mailto:alexa@developers.srm" target="_blank" rel="noopener noreferrer">
-                <img
-                    src="https://img.icons8.com/ios-filled/50/FFFFFF/gmail-new.png"
-                    alt="Gmail"
-                    className="w-8 h-8 hover:scale-110 transition-transform"
-                />
-              </a>
-              <a href="https://www.linkedin.com/company/alexadevsrm" target="_blank" rel="noopener noreferrer">
-                <img
-                    src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png"
-                    alt="LinkedIn"
-                    className="w-8 h-8 hover:scale-110 transition-transform"
-                />
-              </a>
-              <a href="https://twitter.com/alexadevsrm" target="_blank" rel="noopener noreferrer">
-                <img
-                    src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png"
-                    alt="Twitter"
-                    className="w-8 h-8 hover:scale-110 transition-transform"
-                />
-              </a>
-              <a href="https://www.youtube.com/alexadevsrm" target="_blank" rel="noopener noreferrer">
-                <img
-                    src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png"
-                    alt="YouTube"
-                    className="w-8 h-8 hover:scale-110 transition-transform"
-                />
-              </a>
-              <a href="https://www.facebook.com/alexadevsrm" target="_blank" rel="noopener noreferrer">
-                <img
-                    src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-new.png"
-                    alt="Facebook"
-                    className="w-8 h-8 hover:scale-110 transition-transform"
-                />
-              </a>
-            </div>
-            <p className="text-sm mb-4">@alexadevsrm</p>
-            <p className="text-sm">
-              Designed and Developed by <span className="text-teal-400">Alexa Developers</span> SRM.
-            </p>
+            <img src="https://www.alexadevsrm.org/home/business.svg" alt="Alexa Developers SRM Team" className="image"/>
           </div>
-        </footer>
+        </section>
       </div>
+  )
+      ;
+}
+
+function BlogPage() {
+  return (
+      <div className="bg-black text-white min-h-screen flex flex-col justify-center items-center">
+        <h2 className="text-4xl font-bold text-teal-400">Blogs</h2>
+        <p>This is the blog page content.</p>
+      </div>
+  );
+}
+
+function App() {
+  return (
+      <Router>
+        <div className="bg-black text-white min-h-screen relative overflow-hidden">
+          {/* Navbar */}
+          <nav className="flex justify-between items-center p-10">
+            <div className="text-xl font-bold">
+              <span className="text-teal-400">Alexa</span> Developers SRM
+            </div>
+            <div className="space-x-8">
+              <Link to="/" className="hover:text-teal-400">Home</Link>
+              <Link to="/events" className="hover:text-teal-400">Events</Link>
+              <Link to="/team" className="hover:text-teal-400">Our Team</Link>
+              <Link to="/blogs" className="hover:text-teal-400">Blogs</Link>
+            </div>
+            <button className="px-6 py-2 bg-teal-400 hover:bg-teal-500 rounded-full text-black">
+              Apply Now
+            </button>
+          </nav>
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/events" element={<OurEvents />} />
+            <Route path="/team" element={<TeamPage />} />
+            <Route path="/blogs" element={<BlogPage />} />
+          </Routes>
+
+
+          {/* Footer */}
+          <footer className="bg-black text-white py-10 footer">
+            <div className="container mx-auto text-center">
+              <div className="flex justify-center space-x-4 mb-4">
+                {/* Icons */}
+                <a href="#" className="hover:text-teal-400">Facebook</a>
+                <a href="#" className="hover:text-teal-400">Twitter</a>
+                <a href="#" className="hover:text-teal-400">Instagram</a>
+                <a href="#" className="hover:text-teal-400">LinkedIn</a>
+              </div>
+              <p>&copy; 2024 Alexa Developers SRM. All rights reserved.</p>
+            </div>
+          </footer>
+        </div>
+      </Router>
   );
 }
 
