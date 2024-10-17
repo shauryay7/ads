@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import OurEvents  from "./Our Events";
 import TeamPage from "./team";
+import BlogPage from "./BlogPage";
 // Define the placeholder component for OurEvents
 
 
@@ -130,14 +131,7 @@ function Home() {
       ;
 }
 
-function BlogPage() {
-  return (
-      <div className="bg-black text-white min-h-screen flex flex-col justify-center items-center">
-        <h2 className="text-4xl font-bold text-teal-400">Blogs</h2>
-        <p>This is the blog page content.</p>
-      </div>
-  );
-}
+
 
 function App() {
   return (
