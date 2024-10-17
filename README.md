@@ -2,6 +2,12 @@
 
 This project is a revamp of the main website for the **Alexa Developers SRM Club**. The goal is to enhance the design, execution, and overall creativity of the site. This project uses **React** for the frontend development.
 
+## Demo
+
+You can view a live demo of the revamped website here:
+
+[Live Demo]([https://your-deployment-url.com](https://ads-azure.vercel.app))
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Installation](#installation)
