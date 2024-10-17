@@ -21,10 +21,11 @@ body {
 }
 
 .page-content {
+    margin-top: 100px;
+    margin-bottom: 200px;
     display: grid;
     grid-gap: 1rem;
     max-width: 100%;
-    margin: 0 auto;
     font-family: var(--font-sans);
     padding: 3rem;
 }

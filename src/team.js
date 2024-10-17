@@ -52,8 +52,8 @@ function TeamPage() {
 
     return (
         <div className="bg-black text-white px-4">
-            <h1 className="text-6xl font-bold text-teal-400 text-center mt-20 head">Our Team</h1>
-            <p className=" mt-4  mx-auto text-lg p-10">
+            <h1 className="text-6xl font-bold text-teal-400 text-center mt-20 head gradient-text">Our Team</h1>
+            <p className=" mt-4  mx-auto text-2xl pad">
                 Our team at the SRM Alexa Developer Club includes passionate members, dedicated executives,
                 and a visionary head, all working together to foster innovation, learning, and community
                 engagement through dynamic events and activities.

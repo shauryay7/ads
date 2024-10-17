@@ -23,9 +23,9 @@ const blogs = [
 
 const BlogPage = () => {
     return (
-        <div className="bg-gray-900 text-white p-8">
-            <h2 className="text-4xl font-bold text-teal-400 mb-6">Our Blogs</h2>
-            <p className="text-lg mb-10">
+        <div className=" text-white p-20">
+            <h2 className="text-6xl font-bold text-teal-400 mb-6 text-center">Our Blogs</h2>
+            <p className="text-2xl mb-10 text-center">
                 At the SRM Alexa Developer Club, our blog offers a rich blend of tech innovations...
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

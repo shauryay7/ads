@@ -163,3 +163,34 @@
   margin-top: 100px;
 }
 
+.gradient-text {
+  font-weight: bold;
+  background: linear-gradient(270deg, #2dcbb7, rgb(16, 136, 106), rgba(0, 176, 166, 0.7));
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 10s ease infinite;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gt {
+  font-weight: bold;
+  background: linear-gradient(270deg, #ffffff, rgb(0, 255, 189), rgb(255, 255, 255));
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 10s ease infinite;
+}

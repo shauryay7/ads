@@ -10,7 +10,7 @@ import BlogPage from "./BlogPage";
 function Home() {
   return (<div className="bg-black text-white min-h-screen relative overflow-hidden">
         <section id="home" className="relative flex flex-col justify-center items-center text-center">
-          <h1 className="text-4xl sm:text-6xl font-bold mb-4 z-20">
+          <h1 className="text-4xl sm:text-6xl font-bold mb-4 z-20 gt">
             Alexa Developers SRM
           </h1>
           <p className="text-2xl sm:text-3xl text-teal-400 font-semibold mb-8 z-20">
@@ -20,9 +20,6 @@ function Home() {
           {/* Moving Bubbles */}
 
           <div className="absolute inset-0 overflow-hidden z-10 h-screen">
-            <div id="stars"/>
-            <div id="stars2"/>
-            <div id="stars3"/>
             <div className="bubble w-4 h-4 bg-teal-400 rounded-full"></div>
             <div className="bubble w-6 h-6 bg-teal-300 rounded-full"></div>
             <div className="bubble w-3 h-3 bg-teal-500 rounded-full"></div>
@@ -37,10 +34,6 @@ function Home() {
             <div className="bubble w-3 h-3 bg-teal-400 rounded-full"></div>
           </div>
 
-          {/* Scroll down text moved to bottom */}
-          <div className="absolute bottom-0 mb-10 z-20 pb-10">
-            <span className="text-teal-500">Scroll down</span>
-          </div>
         </section>
         <section id="about" className="flex flex-col justify-center items-center py-16 bg-black text-white">
           <h2 className="text-4xl sm:text-5xl font-bold text-teal-400 mb-6 text-center p-4">
@@ -138,8 +131,8 @@ function App() {
       <Router>
         <div className="bg-black text-white min-h-screen relative overflow-hidden">
           {/* Navbar */}
-          <nav className="flex justify-between items-center p-10">
-            <div className="text-xl font-bold">
+          <nav className="flex justify-between items-center p-7">
+            <div className="text-3xl font-bold">
               <span className="text-teal-400">Alexa</span> Developers SRM
             </div>
             <div className="space-x-8">
