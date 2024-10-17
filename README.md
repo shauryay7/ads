@@ -6,7 +6,7 @@ This project is a revamp of the main website for the **Alexa Developers SRM Club
 
 You can view a live demo of the revamped website here:
 
-[Live Demo](https://your-deployment-url.com](https://ads-azure.vercel.app)
+[Live Demo](https://ads-azure.vercel.app)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
